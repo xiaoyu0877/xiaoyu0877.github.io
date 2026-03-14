@@ -44,12 +44,12 @@ noButton.addEventListener("click", function () {
   mainImage.style.transform = `translateY(-${moveUp}px)`;
   questionText.style.transform = `translateY(-${moveUp}px)`;
 
-  // No 文案变化（前 7 次变化）
-  if (clickCount <= 7) {
+  // No 文案变化（前 6 次变化）
+  if (clickCount <= 6) {
     noButton.innerText = noTexts[clickCount - 1];
   }
 
-  // 图片变化（前 5 次变化）
+  // 图片变化（前 6 次变化）
   if (clickCount === 1) mainImage.src = "images/shocked.png"; // 震惊
   if (clickCount === 2) mainImage.src = "images/think.png"; // 思考
   if (clickCount === 3) mainImage.src = "images/angry.png"; // 生气
