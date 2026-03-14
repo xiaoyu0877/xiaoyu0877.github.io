@@ -24,8 +24,7 @@ const noTexts = [
   "不许选这个！ ",
   "我会很伤心…",
   "不行:(",
-  "qwq",
-  "球球你了",
+  "qwq球球你了",
 ];
 
 // No 按钮点击事件
@@ -55,13 +54,13 @@ noButton.addEventListener("click", function () {
   if (clickCount === 2) mainImage.src = "images/think.png"; // 思考
   if (clickCount === 3) mainImage.src = "images/angry.png"; // 生气
   if (clickCount === 4) mainImage.src = "images/crying.png"; // 哭
-  if (clickCount >= 5) mainImage.src = "images/crying.png"; // 之后一直是哭
-  if (clickCount >= 6) mainImage.src ="
+  if (clickCount === 5) mainImage.src = "images/crying.png"; // 之后一直是哭
+  if (clickCount >= 6) mainImage.src ="images/kukuxiaomao.jpg;"//可怜巴巴的看着
 });
 
 // Yes 按钮点击后，进入表白成功页面
-const loveTest = `!!!喜欢你!! ( >᎑<)♡︎ᐝ  ${
-  username ? `${safeUsername}  ♡︎ᐝ(>᎑< )` : ""
+const loveTest = `!!!最喜欢你啦，万岁!! (≧∇≦)ﾉ ${
+  username ? `${safeUsername} (≧∇≦)ﾉ` : ""
 }`;
 
 yesButton.addEventListener("click", function () {
